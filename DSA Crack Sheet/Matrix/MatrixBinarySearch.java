@@ -1,5 +1,5 @@
 package Matrix;
-
+// Program to Implement Binary Search in a Matrix 
 public class MatrixBinarySearch {
     public static void main(String args[]){
         int a[][] = {{1, 2, 3, 4},
