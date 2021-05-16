@@ -16,19 +16,18 @@ public class Program10 {
 
         Map<Integer, Integer> hs= new HashMap<>();
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i <=n; i++){
             hs.put(a[0][i], 1);
         }
 
         for(int i = 1; i < n; i++){
             for( int j = 0; j < m; j++){
                 if(hs.get(a[i][j]) != null && hs.get(a[i][j]) == i){
-
                     hs.put(a[i][j], i+1);
-                }
                 
-                if(i == n-1){
-                    System.out.print(a[i][j] + " ");
+                    if(i == n-1){
+                        System.out.print(a[i][j] + " ");
+                    }
                 }
             }
         }
