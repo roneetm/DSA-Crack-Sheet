@@ -28,6 +28,7 @@ public class Program29 {
         }
         System.out.println(Arrays.toString(left));
         System.out.println(Arrays.toString(right));
+        System.out.println(Arrays.toString(a));
         System.out.println("Water Tapped " +result);
     }
 }
