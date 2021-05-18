@@ -1,4 +1,5 @@
 package String;
+// Print all the duplicates in the input string //
 
 import java.util.HashMap;
 import java.util.Map;
