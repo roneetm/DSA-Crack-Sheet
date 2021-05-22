@@ -1,5 +1,5 @@
 package String;
-
+// Write a Code to check whether one string is a rotation of another
 public class Program5 {
     public static boolean isValid(String s1, String s2){
 		String temp = s1.concat(s1);
