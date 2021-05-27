@@ -1,5 +1,5 @@
 package String;
-// Write a Program to check whether a string is a valid shuffle of two strings or not
+// Write a Program to check whether a string is a valid shuffle of two strings or not	
 public class Program6 {
     public static boolean isValid(String s1, String s2, String res){
 		int flag = 0;
