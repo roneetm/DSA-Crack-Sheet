@@ -17,8 +17,6 @@ public class Program5 {
         if(n == 1){
         return MinMax;
         }
-
-
             if(arr[0] < arr[1]){
                 MinMax.min = arr[0];
                 MinMax.max = arr[1];
