@@ -1,28 +1,24 @@
 package SearchingAndSorting;
 
 import java.util.Arrays;
-
 // Merge Without Extra Space 
 public class Program14 {
     public static void merge(int arr1[], int arr2[], int n, int m) {
 
-        int i = 0;
+        int i = n-1;
         int j = 0;
-        int k = n-1;
 
-        while(i < n && j < m){
+        while(i >= 0 && j < m){
 
-            if(arr1[i] < arr2[j]){
-                i++;
-            }
-            else{
-
+            if(arr1[i] > arr2[j]){
+                
                 int temp = arr2[j];
-                arr2[j] = arr1[k];
-                arr1[k] = temp;
-                k--;
-                j++;
+                arr2[j] = arr1[i];
+                arr1[i] = temp;
             }
+            i--;
+            j++;
+
         }
         Arrays.sort(arr1);
         Arrays.sort(arr2);
@@ -32,12 +28,11 @@ public class Program14 {
     }
     public static void main(String[] args) {
         
-        int arr1[] = {1, 3, 5, 7};
-        int arr2[] = {0, 2, 6, 8, 9};
+        int arr1[] = {1, 1, 2, 2, 2, 2, 4, 4, 5, 5, 7, 8, 10, 11, 11, 12, 14, 15, 17, 18, 19, 19, 20};
+        int arr2[] = {1, 2, 2, 3, 3, 4, 5, 5, 7, 7, 8, 8, 8, 9, 9, 10, 13, 13, 14, 15, 16, 17, 18, 18, 18, 19, 19};
 
-        int N = 4, M = 5;
+        int N = arr1.length, M = arr2.length;
 
         merge(arr1, arr2, N, M);
-
     }
 }
